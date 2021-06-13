@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rebeccapurple;
+    margin: 0;
+    color: white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pw-container{
+    background-color: rgb(46, 12, 80);
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw-body{
+padding: 0 1rem 1rem;
+}
+
+.pw{
+    background-color: rgb(69,28,109);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+
+.pw button {
+    font-weight: bold;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    color: rgb(29,2,56);
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pw:hover button{
+    opacity:1;
+    transform: translate(0, -80%);
+}
+
+.form-control{
+    color:#eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate{
+    display: block;
+    background-color: #ecb602;
+    color:rebeccapurple;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
